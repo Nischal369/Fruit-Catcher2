@@ -45,24 +45,16 @@ class Form{
         });
 
         this.reset.mousePressed(() => {
-           
-            database.ref("/").set({
-                //reset the playerCount
-            //reset gameState
-            //reset players
-      
-              });
-             //reload the window
-            });
-          }
-          //BP
+            player.updateCount(0);
+            game.update(0);
 
-/* 
+
+
             var playerInfoRef = database.ref('players');
             playerInfoRef.remove();
 
             
         });
 
-    } */
+    }
 }
